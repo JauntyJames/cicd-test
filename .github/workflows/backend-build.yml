@@ -33,6 +33,7 @@ jobs:
     - name: Docker meta
       id: meta
       uses: docker/metadata-action@v4
+      with:
         images: |
           ${{ secrets.DOCKER_REGISTRY }}/idhdwarejdxj/jph/cicd-test
         tags: |
