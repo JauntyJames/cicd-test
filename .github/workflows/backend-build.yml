@@ -19,13 +19,6 @@ jobs:
       actions: read
     runs-on: ubuntu-latest
     name: Deploy application to container instance
-    env:
-      # ACTIONS_ALLOW_UNSECURE_COMMANDS: true
-      # OCI_CLI_USER: ${{ secrets.OCI_CLI_USER }}
-      # OCI_CLI_TENANCY: ${{ secrets.OCI_CLI_TENANCY }}
-      # OCI_CLI_FINGERPRINT: ${{ secrets.OCI_CLI_FINGERPRINT }}
-      # OCI_CLI_KEY_CONTENT: ${{ secrets.OCI_CLI_KEY_CONTENT }}
-      # OCI_CLI_REGION: ${{ secrets.OCI_CLI_REGION }}
     steps:
     - uses: actions/checkout@v3
       with:
